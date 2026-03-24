@@ -1,0 +1,54 @@
+
+:root {
+  --fh-shell-bg: linear-gradient(180deg, #fffdf7 0%, #f4f7ea 38%, #fff7ea 100%);
+  --fh-text: #1f2a1c;
+  --fh-card: rgba(255, 255, 255, 0.88);
+  --fh-card-border: rgba(90, 127, 52, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, 'Segoe UI', Roboto, Arial, sans-serif;
+  color: var(--fh-text);
+  background: var(--fh-shell-bg);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.light-mode {
+  background: var(--fh-shell-bg);
+}
+
+body.dark-mode {
+  --fh-text: #edf4e7;
+  --fh-card: rgba(28, 39, 28, 0.92);
+  --fh-card-border: rgba(190, 219, 160, 0.12);
+  background:
+    radial-gradient(circle at top left, rgba(119, 156, 76, 0.16), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(247, 176, 66, 0.14), transparent 26%),
+    linear-gradient(180deg, #121b13 0%, #182219 100%);
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.fh-glass-card {
+  background: var(--fh-card);
+  border: 1px solid var(--fh-card-border);
+  backdrop-filter: blur(8px);
+}
+
+.fh-section-title {
+  letter-spacing: -0.03em;
+}
